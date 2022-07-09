@@ -20,6 +20,9 @@
         margin-top: 25px;
         text-align: center;
     }
+    .contacts_info-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 1220px) {
@@ -42,6 +45,9 @@
 @media screen and (max-width: 1080px) {
     .main_form form {
         background-position-x: 200%;
+    }
+    .docs_list-list {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -143,6 +149,15 @@
     }
 }
 
+@media screen and (max-width: 890px) {
+    .price_table {
+        font-size: 14px;
+    }
+    .price_table td:nth-child(3) {
+        width: 120px;
+    }
+}
+
 @media screen and (max-width: 830px) {
     .header-title {
         font-size: 36px;
@@ -153,6 +168,18 @@
         display: flex;
         align-items: flex-end;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.58) 100%);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contacts_info-list {
+        grid-template-columns: 1fr;
+    }
+    .contacts_info-list-item {
+        padding-bottom: 40px;
+    }
+    .page-title h1 {
+        font-size: 32px;
     }
 }
 
@@ -206,6 +233,15 @@
     }
 }
 
+@media screen and (max-width: 540px) {
+    .price_table-item {
+        overflow: auto;
+    }
+    .price_table-item table {
+        width: 540px;
+    }
+}
+
 @media screen and (max-width: 520px) {
     .header-title {
         padding-left: 10px;
@@ -221,5 +257,11 @@
 @media screen and (max-width: 450px) {
     .nav_menu-list-submenu-item a {
         padding: 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .docs_list-list {
+        grid-template-columns: 1fr;
     }
 }
