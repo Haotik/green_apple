@@ -40,14 +40,38 @@
     .main_form form {
         background-position-x: 150%;
     }
+    .doctors_list-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service_article-item-img {
+        padding-top: 0;
+    }
+    .service_article-item-img img {
+        width: 100%;
+    }
+    .memo_list .pd-category {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width: 1080px) {
+    .service_article-item {
+        grid-template-columns: 1fr;
+    }
     .main_form form {
         background-position-x: 200%;
     }
     .docs_list-list {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .doctor_main .container {
+        grid-template-columns: 1fr;
+    }
+    .doctor_main-img {
+        width: auto;
+    }
+    .doctor_main-text-graffic {
+        margin-bottom: 30px;
     }
 }
 
@@ -156,6 +180,9 @@
     .price_table td:nth-child(3) {
         width: 120px;
     }
+    .memo_list .pd-category {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 830px) {
@@ -179,6 +206,12 @@
         padding-bottom: 40px;
     }
     .page-title h1 {
+        font-size: 32px;
+    }
+    .doctors_list-list {
+        grid-template-columns: 1fr;
+    }
+    h1 {
         font-size: 32px;
     }
 }
@@ -217,12 +250,18 @@
     .services_list-item-text {
         display: none;
     }
+    .doctor_main-text-list li {
+        padding-left: 55px;
+    }
 }
 
 @media screen and (max-width: 570px) {
     .services_list,
     .info_list,
     .spec_list {
+        grid-template-columns: 1fr;
+    }
+    .memo_list .pd-category {
         grid-template-columns: 1fr;
     }
 }
